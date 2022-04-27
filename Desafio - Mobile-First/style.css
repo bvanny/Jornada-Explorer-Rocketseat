@@ -1,0 +1,129 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+:root {
+	font-size:62.5%;
+
+	/*Colors*/
+	--color-primary:#EFF1FF;
+	--color-secondary:#8E9AAF;
+	--color-third:#cbc0d38a;
+	--color-fourth:#fff;
+	--color-five:#23053A;
+	--color-six:#FEEAFA;
+	--color-seven:#4A4E69;
+
+	/*Fonts*/
+	--ff-primary:'Palanquin', sans-serif;
+	--ff-secondary:'Staatliches', cursive;
+}
+body {
+	font-size:1.6rem;
+	background-color:var(--color-primary);
+}
+
+body:before {
+	content:'';
+	width:100%;
+	height:279px;
+	position:absolute;
+	z-index:-1;
+	top:0;
+	left:0;
+	background-color:var(--color-secondary);
+}
+
+.page {
+	max-width:38.4rem;
+	margin:0 auto;
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-header);
+  padding: 2.5rem 0 3.2rem ;
+  background: var(--bg-header-color);
+}
+
+header h1 {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+
+  color: var(--color-fourth);
+  background: var(--color-third);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  
+  text-align: center;
+  height: 4.9rem;
+  width:100%;
+  padding: 8px 7px;
+  margin-top: 2.9rem;
+}
+
+main {
+  display: grid;
+  gap: 3.2rem;
+
+  padding: 2rem 2rem 6rem;
+}
+
+main > p:nth-child(1) {
+	font-style: normal;
+  font-weight: 400;
+	width:32.0rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+	color:var(--color-five);
+}
+
+.main img{
+	width:100%;
+	height:auto;
+}
+
+.cards {
+	position:relative;
+	
+}
+
+.cards img {
+	object-fit: cover;
+	height:100%;
+	border-radius:2rem;
+	transition:200ms ease-in;
+}
+
+.cards img:hover {
+	
+}
+
+
+.cards h2 {
+	position:absolute;
+	top:1.6rem;
+	left:19.2rem;
+	background-color:var(--color-six);
+	padding:1px 2.4rem;
+	border-radius:2.0rem;
+	color:var(--color-seven);
+	font-weight:400;
+	font-size:2.0rem;
+	line-height:3.4rem;
+	font-family:var(--ff-secondary);
+}
+
+
+@keyframes {
+
+}
